@@ -5,7 +5,7 @@ from google.cloud.vision import types
 from PIL import Image
 #exec(open('ss.py').read())
 client = vision.ImageAnnotatorClient()
-
+#nice job
 image_file = ImageGrab.grab((35, 95, 365, 365))
 image_file.show()
 imgByteArr = io.BytesIO()
