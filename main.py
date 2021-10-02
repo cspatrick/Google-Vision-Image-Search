@@ -11,9 +11,9 @@ image_file.show()
 imgByteArr = io.BytesIO()
 image_file.save(imgByteArr, format='PNG')
 imgByteArr = imgByteArr.getvalue()
-content = imgByteArr
+fimg = imgByteArr
 
-image = types.Image(content=content)
+image = types.Image(fimg=fimg)
 
 response = client.web_detection(image=image)
 annotations = response.web_detection
