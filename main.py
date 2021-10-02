@@ -20,4 +20,4 @@ annotations = response.web_detection
             
 for entity in annotations.web_entities:
     print(entity.description + '   ' + str(entity.score))
-#hi
+#bye
